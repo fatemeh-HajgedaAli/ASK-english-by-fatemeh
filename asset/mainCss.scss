@@ -2,6 +2,7 @@
 --bg-color:#080808;
 --second-bg-color:#131313;
 --main-color:#00ffee;
+--blue-Cyan:rgb(224, 247, 250);
 --text-blue-color:#00ffee;
 --text-white-color:#ffff;
 --text-font-Big:2.2rem;
@@ -91,24 +92,41 @@ cursor:pointer;
 color: var(--main-color);
 }
 .navMenu{
-  position:fixed;
-  display: flex;
-  flex-direction: row;
-  left:30%;
-  top: 80%;
-  justify-content: space-between;
-  gap: 1.5rem;
-  text-align: center;
-  align-items: center;
+position:fixed;
+display: flex;
+flex-direction: row;
+left:30%;
+top: 80%;
+justify-content: space-between;
+gap: 1.5rem;
+text-align: center;
+align-items: center;
 }
-.navMenu a:hover ,  .active{
-  color: var(--main-color);
-  border-bottom:2px solid var(--text-blue-color);
-  text-shadow: 0 0 30px var(--main-color);
+.linkitem:hover ,  .active{
+color: var(--main-color);
+border-bottom:2px solid var(--text-blue-color);
+text-shadow: 0 0 30px var(--main-color);
  }
+//  dropmenu
+.submenu{
+display: none;
+flex-direction: column;
+background-color: #ffff;
+z-index: 6;
+text-align: start;
+padding: 5px;
+}
+.submenuList{
+color: #131313;
+font-size: var(--text-font-small);
+margin:5px;
+}
+.submenuList:hover{
+background: var(--blue-Cyan);
+}
 }
 
-   // responsive Part
+// responsive Part
 
 @media screen and (max-width: 1200px) {
 

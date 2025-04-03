@@ -2,6 +2,7 @@
   --bg-color:#080808;
   --second-bg-color:#131313;
   --main-color:#00ffee;
+  --blue-Cyan:rgb(224, 247, 250);
   --text-blue-color:#00ffee;
   --text-white-color:#ffff;
   --text-font-Big:2.2rem;
@@ -108,8 +109,24 @@ body {
   text-align: center;
   align-items: center;
 }
-.header .navMenu a:hover, .header .active {
+.header .linkitem:hover, .header .active {
   color: var(--main-color);
   border-bottom: 2px solid var(--text-blue-color);
   text-shadow: 0 0 30px var(--main-color);
+}
+.header .submenu {
+  display: none;
+  flex-direction: column;
+  background-color: white;
+  z-index: 6;
+  text-align: start;
+  padding: 5px;
+}
+.header .submenuList {
+  color: #131313;
+  font-size: var(--text-font-small);
+  margin: 5px;
+}
+.header .submenuList:hover {
+  background: var(--blue-Cyan);
 }/*# sourceMappingURL=mainCss.css.map */
