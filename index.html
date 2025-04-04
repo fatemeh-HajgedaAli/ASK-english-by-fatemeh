@@ -12,6 +12,10 @@
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- image for loading Part -->
+    <div class="loaderHidden">
+        <img src="./images/ASK_logo_text_white.png" alt="reloadASK" class="logoReload"><span class="reloadText" style="color:rgb(255, 255, 255)">Is LoaDinG...</span>
+    </div>
 <header class="header">
     <!-- navBar -->
     <div class="topNavBar">
@@ -29,18 +33,20 @@
   <nav class="navBar">
         <ul class="navMenu">
             <li class="dropdown">
-                <a href="#home" class="linkitem active">Home</a>
+                <a href="html" class="linkitem active">Home</a>
             </li>
             <li class="dropdown">
                 <a href="#skills" class="linkitem">skills</a>
                 <ul class="submenu">
-                    <li><a href="#" class="submenuList">Listening</a></li>
+                    <!-- href=each page that we want to run it. -->
+                    <li><a href="listening.html" class="submenuList">Listening</a></li>
                     <li><a href="#" class="submenuList">Speaking</a></li>
                     <li><a href="#" class="submenuList">Reading</a></li>
                     <li><a href="#" class="submenuList">Writing</a></li>
                 </ul>
             </li>
             <li class="dropdown">
+                <!-- href=each page that we want to run it. -->
                 <a href="#Online course" class="linkitem">Online course</a>
                 <ul class="submenu">
                     <li><a href="#" class="submenuList">live Class</a></li>
