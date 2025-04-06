@@ -1,9 +1,9 @@
 :root{
 --bg-color:#080808;
 --second-bg-color:#131313;
---main-color:#00ffee;
---blue-Cyan:rgb(224, 247, 250);
---text-blue-color:#00ffee;
+--main-color:#ff0404;
+--red:rgb(239, 154, 154);
+--text-red-color:#ff0000;
 --text-white-color:#ffff;
 --text-font-Big:2.2rem;
 --text-font-medium:1.2rem;
@@ -36,7 +36,11 @@ color: var(--text-white-color);
 position: fixed;
 width: 100%;
 height: 100%;
-background: rgb(33, 33, 33 , 0.6); /* لایه نیمه‌شفاف */
+background-color: var(--bg-color);
+background-image: url('../images/gif.gif');
+background-position:38%;
+background-repeat:no-repeat;
+background-size: 24%;
 backdrop-filter: blur(10px); /* بلور کردن */
 display: flex;
 align-items: center;
@@ -62,7 +66,7 @@ top: 0;
 left: 0;
 width: 100%;
 padding: 4rem 12% 4rem;
-background-color: rgba(0,0,0,0.3);
+background-color: rgba(250, 5, 5, 0.30);
 backdrop-filter: blur(10px);
 display: flex;
 z-index: 5;
@@ -129,9 +133,9 @@ align-items: center;
 }
 .linkitem:hover ,  .active{
 color: var(--main-color);
-border-bottom:2px solid var(--text-blue-color);
+border-bottom:2px solid var(--text-red-color);
 text-shadow: 0 0 30px var(--main-color);
- }
+}
 //  dropmenu
 .submenu{
 display: none;
@@ -140,10 +144,10 @@ flex-direction: column;
 background-color: #ffff;
 z-index: 6;
 text-align: start;
-padding: 5px;
+padding-top:5px;
 }
 .dropdown {
-    position: relative;
+position: relative;
 }
 .submenu {
 position: absolute;
@@ -154,16 +158,16 @@ width: 300px; /* تنظیم عرض زیرمنو */
 .submenuList{
 color: #131313;
 font-size: var(--text-font-small);
-margin:5px;
+
 }
 .submenuList:hover{
-background: var(--blue-Cyan);
+background-color: var(--red);
+padding: 2px;
 }
 // show dropdown Menu
 .dropdown:hover .submenu {
 display: block;
 }
-
 }
 
 // responsive Part
