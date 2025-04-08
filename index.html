@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ASK-english-by-fatemeh</title>
+    <title>ASK.com</title>
     <link rel="shortcut icon" href="./images/ASK_logo-removebg-preview.png" type="image/x-icon">
     <link rel="stylesheet" href="./asset/mainCss.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
@@ -21,13 +21,15 @@
     <!-- navBar -->
     <div class="topNavBar">
         <div class="logo">
-            <img src="./images/ASK_logo_text_white.png" alt="ASK logo" class="askLogo"><span class="text">-english-by-fatemeh</span>
+            <img src="./images/ASK_logo_text_white.png" alt="ASK logo" class="askLogo"><span class="text">.com</span>
         </div>
       <!-- right btn -->
         <div class="rightPart">
             <span class="searchIcon"><i class='bx bx-search-alt'></i></span>
             <!-- logIn buttom -->
-            <button type="button" class="logInBtn"> log in </button>
+            <button type="button" class="logInBtn">| Log In |</button>
+            <!-- register -->
+            <button type="button" class="registerBtn"> Register </button>
         </div>
         </div>
     </div>
@@ -79,23 +81,29 @@
  <!-- form logIn -->
 <div class="loginBackground">
     <div class="logInPart">
-    <img src="./images/ASK_logo_text_white.png" alt="ASK logo" class="askLogo"><span class="logoText">-english-by-fatemeh</span>
+    <img src="./images/ASK_logo_text_white.png" alt="ASK logo" class="askLogo"><span class="logoText">.com</span>
     <h2 class="textForm">LOG IN</h2>
-    <p class="alertText">If you don’t have a <a href="#" class="alartLink">ASK-english-by-fatemeh account</a> you can
+    <p class="alertText">If you don’t have a <a href="#" class="alartLink">ASK.com account</a> you can
          <a href="#" class="alartLink">register</a>
          now.<br>It’s quick, easy and free.</p>
          <!-- input Buttoms -->
          <div class="inputpart">
-         <input type="text" placeholder="Email Address" class="textInput">
-         <input type="password" placeholder="Password" class="textInput showPassword">
+         <input type="text" placeholder="Email Address" class="textInput"  id="textInput"  maxlength="19" required>
+         <input type="password" placeholder="Password" class="textInput showPassword" id="passWordInput" maxlength="8" required>
          <i class="bi bi-eye-slash-fill closeEye" id="togglePassword"></i>
-         <div id="passwordAlert" class="password-alert">
-            Password must be at least 8 characters, contain a number <br>and an uppercase letterand symbol.
+         <div id="passwordAlert" class="passwordalert">
+            Password must be at least 8 characters, contain a number <br>and an uppercase letter and symbol.
           </div>
          <button class="loginBtn">ENTER</button>
         </div>
 </div>
 </div>
+<!-- mainPart -->
+<section class="mainPart">
+<div class="content">
+    
+</div>
+</section>
  <script src="./script/script.js"></script>
 </body>
 </html>
