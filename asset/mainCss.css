@@ -156,12 +156,13 @@ body {
   position: fixed;
   display: flex;
   flex-direction: row;
-  left: 30%;
+  left: 28%;
   top: 80%;
   justify-content: space-between;
-  gap: 1.5rem;
+  gap: 3rem;
   text-align: center;
   align-items: center;
+  font-weight: 630;
 }
 
 .linkitem:hover, .active {
@@ -175,9 +176,11 @@ body {
   position: absolute;
   flex-direction: column;
   background-color: white;
-  z-index: 6;
   text-align: start;
   padding-top: 5px;
+  padding-left: 5px;
+  margin-top: 0.8rem;
+  z-index: 6;
 }
 
 .dropdown {
@@ -188,7 +191,7 @@ body {
   position: absolute;
   left: 0;
   top: 100%;
-  width: 300px; /* تنظیم عرض زیرمنو */
+  width: 300px;
 }
 
 .submenuList {
@@ -199,6 +202,7 @@ body {
 .submenuList:hover {
   background-color: var(--red);
   padding: 2px;
+  font-weight: 600;
 }
 
 .dropdown:hover .submenu {
@@ -345,8 +349,4 @@ body {
   border-radius: 1rem;
   box-shadow: 1px 2px 3px var(--text-red-color);
   letter-spacing: 1.5px;
-}
-
-.mainPart {
-  background-image: url("../images/Flag.jpg");
 }/*# sourceMappingURL=mainCss.css.map */

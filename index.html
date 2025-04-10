@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <!-- image for loading Part -->
@@ -20,11 +21,11 @@
 <header class="header">
     <!-- navBar -->
     <div class="topNavBar">
-        <div class="logo">
+        <div class="logo" >
             <img src="./images/ASK_logo_text_white.png" alt="ASK logo" class="askLogo"><span class="text">.com</span>
         </div>
       <!-- right btn -->
-        <div class="rightPart">
+        <div class="rightPart" data-aos="fade-left" data-aos-duration="1900"  data-aos-delay="500">
             <span class="searchIcon"><i class='bx bx-search-alt'></i></span>
             <!-- logIn buttom -->
             <button type="button" class="logInBtn">| Log In |</button>
@@ -35,12 +36,12 @@
     </div>
 
     <!-- navigation -->
-  <nav class="navBar">
+  <nav class="navBar" >
         <ul class="navMenu">
-            <li class="dropdown">
+            <li class="dropdown" data-aos="zoom-out-up" data-aos-duration="1900"  data-aos-delay="100">
                 <a href="html" class="linkitem active">Home</a>
             </li>
-            <li class="dropdown">
+            <li class="dropdown" data-aos="zoom-out-up" data-aos-duration="1900"  data-aos-delay="200">
                 <a href="#skills" class="linkitem">skills</a>
                 <ul class="submenu">
                     <!-- href=each page that we want to run it. -->
@@ -50,7 +51,7 @@
                     <li><a href="#" class="submenuList">Writing</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
+            <li class="dropdown" data-aos="zoom-out-up" data-aos-duration="1900"  data-aos-delay="300" >
                 <!-- href=each page that we want to run it. -->
                 <a href="#Online course" class="linkitem">Online course</a>
                 <ul class="submenu">
@@ -58,7 +59,7 @@
                     <li><a href="#" class="submenuList">Self-Study Courses</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
+            <li class="dropdown" data-aos="zoom-out-up" data-aos-duration="1900"  data-aos-delay="500">
                 <a href="#English level" class="linkitem">English level</a>
                 <ul class="submenu">
                     <li><a href="#" class="submenuList">Online English Level test</a></li>
@@ -66,7 +67,7 @@
                     <li><a href="#" class="submenuList">Undrestand Your English Level</a></li>
                 </ul>
             </li>
-            <li class="dropdown">
+            <li class="dropdown" data-aos="zoom-out-up" data-aos-duration="1900"  data-aos-delay="600">
                 <a href="#General English" class="linkitem">General English</a>
                 <ul class="submenu">
                     <li><a href="#" class="submenuList">Vidio zone</a></li>
@@ -105,5 +106,15 @@
 </div>
 </section>
  <script src="./script/script.js"></script>
+
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    
+  AOS.init
+  ({
+    offset: 1,
+    });
+
+</script>
 </body>
 </html>

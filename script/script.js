@@ -42,7 +42,7 @@ function isPasswordValid(password) {
   console.log("Uppercase check:", uppercaseCheck);
   console.log("Symbol check:", symbolCheck);
 
-  return lengthCheck && numberCheck && uppercaseCheck && symbolCheck; // اگر همه شرایط درست باشند، true برمی‌گرداند
+return lengthCheck && numberCheck && uppercaseCheck && symbolCheck; // اگر همه شرایط درست باشند، true برمی‌گرداند
 }
 // افزودن رویداد (event listener) برای دکمه لاگین
 loginBtn.addEventListener("click", (e) => {
@@ -75,4 +75,14 @@ passwordInput.addEventListener("keydown", (e) => {
     passwordAlert.style.display = "none";  // مخفی کردن هشدار رمز عبور
   }
 });
-
+ //log in click
+   const logIn=document.querySelector('.logInBtn');
+   logIn.addEventListener('click' , function(){
+    document.querySelector('.loginBackground').style.display='block';
+   });
+//close Form 
+const enterBtn=document.querySelector('.loginBtn');
+enterBtn.addEventListener('click' , function(){
+  document.querySelector('.loginBackground').style.display='none'; }
+  
+)
