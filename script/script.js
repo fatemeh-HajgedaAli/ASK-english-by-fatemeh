@@ -2,7 +2,7 @@
 const loaderElem=document.querySelector('.loaderHidden');
 window.addEventListener('load', function(){
   this.setTimeout(() => {
-this.document.querySelector(".loaderHidden").style.display="none";},100);
+this.document.querySelector(".loaderHidden").style.display="none";},3000);
   });
 
 //reload and Refresh the site.
