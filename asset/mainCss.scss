@@ -408,15 +408,15 @@ display: flex;
 flex-direction: column;
 position: absolute;
 background-image: url('../images/falg.jpg');
-background-position: center;
+
 background-repeat: no-repeat;
 background-size: cover;
-height: 100vh;
-margin-top: 7rem;
+height: 50%;
+margin-top: 9rem;
 .mainTitle{
 text-align: center;
 margin-left:1rem;
-margin-top: 2rem;
+margin-top: 3rem;
 color: var(--bg-blue-color);
 font-weight: 900;
 font-size: 2.9rem;
@@ -424,7 +424,7 @@ text-shadow: 1px 2px 1px var(--text-white-color);
 }
 .paragraph{
 display: inline-block;
-margin: 1rem 20rem;
+margin: 3rem 20rem;
 font-size: 1.2rem;
 text-align: center;
 font-weight: 600;
@@ -437,9 +437,39 @@ font-weight: 200;
 .pictureParts{
 position: absolute;
 display: flex;
-.skilsPicture{
-    .skill{
-        width: 25rem;
-    }
+flex-direction: column;
+gap:0.2rem;
+.picture{
+width: 30rem;
+margin-top: 35rem;
+margin-left: 5rem;
+border-radius: 1rem 2rem 0 2rem;
+box-shadow: 1px 2px 12px var(--text-white-color);
+}
+.textpart{
+display: inline-block;
+background-color: var(--text-white-color);
+color: var(--bg-blue-color);
+width:50rem;
+margin-left: 33rem;
+margin-top: -100rem;
+padding:3rem;
+text-align: left;
+border-radius: 1rem 2rem 0 2rem;
+box-shadow: 1px 5px 10px var(--text-white-color);
+}
+.titleSkill{
+font-size:2rem;
+padding-bottom: 1rem;
+}
+.checkBtn{
+color: #ff0000;
+background-color: var(--bg-blue-color);
+width: 10rem;
+padding: 0.5rem;
+margin-top: 2rem;
+border-radius: 0.8rem;
+font-weight: 600;
+box-shadow: 1px 3px 5px var(--bg-blue-color);
 }
 }
