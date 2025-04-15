@@ -394,13 +394,27 @@ body {
 }
 .content .text {
   display: block;
-  margin: 2rem 2rem 3rem;
+  margin: 2rem;
   font-size: var(--text-font-Big);
   font-weight: 500;
   letter-spacing: 1.2px;
 }
 .content .text span {
   font-weight: 800;
+}
+.content .logContent {
+  width: 4rem;
+  position: absolute;
+  margin: 2rem;
+  border-bottom: 4px solid var(--bg-color);
+}
+.content .contentLogo {
+  position: absolute;
+  display: inline-block;
+  color: var(--main-color);
+  top: 13%;
+  left: 7%;
+  font-weight: 660;
 }
 
 .mainSection {
@@ -432,4 +446,12 @@ body {
   color: var(--main-color);
   text-shadow: 1px 0px 1px var(--bg-blue-color);
   font-weight: 200;
+}
+
+.pictureParts {
+  position: absolute;
+  display: flex;
+}
+.pictureParts .skilsPicture .skill {
+  width: 25rem;
 }/*# sourceMappingURL=mainCss.css.map */

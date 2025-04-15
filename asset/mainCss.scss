@@ -379,13 +379,27 @@ box-shadow:0 0 10px var(--main-color);
 }
 .text{
 display: block;
-margin:2rem 2rem 3rem;
+margin:2rem;
 font-size: var(--text-font-Big);
 font-weight: 500;
 letter-spacing: 1.2px;
 span{
 font-weight: 800;
 }
+}
+.logContent{
+width: 4rem;
+position: absolute;
+margin: 2rem;
+border-bottom: 4px solid var(--bg-color);
+}
+.contentLogo{
+position: absolute;
+display: inline-block;
+color: var(--main-color);
+top:13%;
+left: 7%;
+font-weight: 660;
 }
 }
 //mainPart 
@@ -418,5 +432,14 @@ color: var(--main-color);
 text-shadow: 1px 0px 1px var(--bg-blue-color);
 font-weight: 200;
 }
-
+}
+//section Pictures
+.pictureParts{
+position: absolute;
+display: flex;
+.skilsPicture{
+    .skill{
+        width: 25rem;
+    }
+}
 }
