@@ -10,6 +10,7 @@
   --text-font-Big:1.6rem;
   --text-font-medium:1.2rem;
   --text-font-small:0.9rem;
+  --font-family:"Poppins", sans-serif;
 }
 
 html {
@@ -394,13 +395,13 @@ body {
 }
 .content .text {
   display: block;
-  margin: 2rem;
+  margin: 3rem;
   font-size: var(--text-font-Big);
-  font-weight: 500;
+  font-weight: 700;
   letter-spacing: 1.2px;
 }
 .content .text span {
-  font-weight: 800;
+  font-weight: 400;
 }
 .content .logContent {
   width: 4rem;
@@ -422,15 +423,17 @@ body {
   flex-direction: column;
   position: absolute;
   background-image: url("../images/falg.jpg");
+  background-position: top 70%;
   background-repeat: no-repeat;
   background-size: cover;
   height: 50%;
+  width: 100%;
   margin-top: 9rem;
 }
 .mainSection .mainTitle {
   text-align: center;
   margin-left: 1rem;
-  margin-top: 3rem;
+  margin-top: 4rem;
   color: var(--bg-blue-color);
   font-weight: 900;
   font-size: 2.9rem;
@@ -438,13 +441,12 @@ body {
 }
 .mainSection .paragraph {
   display: inline-block;
-  margin: 3rem 20rem;
+  margin: 2rem 25rem;
   font-size: 1.2rem;
   text-align: center;
-  font-weight: 600;
   color: var(--main-color);
-  text-shadow: 1px 0px 1px var(--bg-blue-color);
-  font-weight: 200;
+  text-shadow: 3px 4px 10px var(--text-white-color);
+  font-weight: 500;
 }
 
 .pictureParts {
