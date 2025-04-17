@@ -387,17 +387,17 @@ body {
   height: auto;
   color: var(--bg-blue-color);
   border-radius: 1rem 3rem 0;
-  padding: 6rem 1rem 5rem 2.5rem;
+  padding: 5.9rem 1rem 5rem 2.5rem;
   letter-spacing: 1.2px;
   text-align: left;
   font-size: var(--text-font-Big);
-  box-shadow: 0 0 10px var(--main-color);
+  box-shadow: 0 0 10px var(--text-white-color);
 }
 .content .text {
   display: block;
   margin: 3rem;
   font-size: var(--text-font-Big);
-  font-weight: 700;
+  font-weight: 600;
   letter-spacing: 1.2px;
 }
 .content .text span {
@@ -458,10 +458,10 @@ body {
   margin-left: 1rem;
   align-items: center;
 }
-.pictureParts .albumPart li {
+.pictureParts .albumItem {
   display: flex;
   flex-direction: column;
-  background-color: #f0f0f0; /* رنگ دلخواه */
+  background-color: var(--text-white-color);
   padding: 1rem;
   margin: 1rem;
   border-radius: 10px;
@@ -469,8 +469,8 @@ body {
   color: var(--bg-blue-color);
 }
 .pictureParts .imagePart {
-  width: 28rem;
-  height: auto;
+  width: 100%;
+  max-width: 28rem;
   margin-bottom: 3rem;
   margin: 1rem;
   border-radius: 1rem 1rem 0 3rem;
@@ -479,6 +479,26 @@ body {
 .pictureParts .textPart {
   display: inline-block;
   margin-top: -16rem;
-  margin-bottom: 3rem;
+  margin-bottom: 2rem;
   margin-left: 30rem;
+}
+.pictureParts .textPart .imageTitle {
+  padding-bottom: 1.5rem;
+}
+.pictureParts .btnPart {
+  display: block;
+  margin-top: 3rem;
+  padding: 1rem 2rem;
+  border-radius: 0rem 1rem 1rem 1rem;
+  background-color: var(--bg-blue-color);
+  color: var(--text-white-color);
+  font-size: 1.2rem;
+  font-weight: 600;
+  box-shadow: 1px 1px 10px var(--bg-blue-color);
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+.pictureParts .btnPart:hover {
+  background-color: var(--main-color);
+  color: var(--text-white-color);
+  text-decoration: underline;
 }/*# sourceMappingURL=mainCss.css.map */
