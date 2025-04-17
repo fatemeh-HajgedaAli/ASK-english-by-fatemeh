@@ -450,41 +450,35 @@ body {
 }
 
 .pictureParts {
-  position: absolute;
+  display: flex;
+  position: relative;
+  gap: 2rem;
+  color: var(--bg-blue-color);
+  margin-top: 32rem;
+  margin-left: 1rem;
+  align-items: center;
+}
+.pictureParts .albumPart li {
   display: flex;
   flex-direction: column;
-  gap: 0.2rem;
-}
-.pictureParts .picture {
-  width: 30rem;
-  margin-top: 35rem;
-  margin-left: 5rem;
-  border-radius: 1rem 2rem 0 2rem;
-  box-shadow: 1px 2px 12px var(--text-white-color);
-}
-.pictureParts .textpart {
-  display: inline-block;
-  background-color: var(--text-white-color);
+  background-color: #f0f0f0; /* رنگ دلخواه */
+  padding: 1rem;
+  margin: 1rem;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   color: var(--bg-blue-color);
-  width: 50rem;
-  margin-left: 33rem;
-  margin-top: -100rem;
-  padding: 3rem;
-  text-align: left;
-  border-radius: 1rem 2rem 0 2rem;
-  box-shadow: 1px 5px 10px var(--text-white-color);
 }
-.pictureParts .titleSkill {
-  font-size: 2rem;
-  padding-bottom: 1rem;
+.pictureParts .imagePart {
+  width: 28rem;
+  height: auto;
+  margin-bottom: 3rem;
+  margin: 1rem;
+  border-radius: 1rem 1rem 0 3rem;
+  box-shadow: 1px 2px 10px var(--bg-blue-color);
 }
-.pictureParts .checkBtn {
-  color: #ff0000;
-  background-color: var(--bg-blue-color);
-  width: 10rem;
-  padding: 0.5rem;
-  margin-top: 2rem;
-  border-radius: 0.8rem;
-  font-weight: 600;
-  box-shadow: 1px 3px 5px var(--bg-blue-color);
+.pictureParts .textPart {
+  display: inline-block;
+  margin-top: -16rem;
+  margin-bottom: 3rem;
+  margin-left: 30rem;
 }/*# sourceMappingURL=mainCss.css.map */
